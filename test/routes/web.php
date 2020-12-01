@@ -20,5 +20,8 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
-Route::get('/empleado', 'HomeController@empleado')->name('empleado');
+Route::get('/empleado', 'HomeController@empleado');
 Route::post('/empleado/store', 'HomeController@store');
+Route::put('/empleado/desactivar', 'HomeController@desactivar');
+Route::put('/empleado/activar', 'HomeController@activar');
+Route::put('/empleado/elimina', 'HomeController@elimina');

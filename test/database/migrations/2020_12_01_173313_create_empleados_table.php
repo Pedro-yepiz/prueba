@@ -22,6 +22,7 @@ class CreateEmpleadosTable extends Migration
             $table->string('correo');
             $table->string('tipo_contrato');
             $table->boolean('activo');
+            $table->boolean('eliminado');
             $table->timestamps();
         });
     }
